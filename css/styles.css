@@ -1,0 +1,164 @@
+.structural0 {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+h1#heading {
+  color: rgb(192, 49, 49);
+  background-color: aquamarine;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+header {
+  flex: 1 10%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  font: italic small-caps bold 12px/30px Georgia, serif;
+  padding: 2em;
+}
+
+nav {
+  flex: 1 5%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+nav li a {
+  padding: 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex: 4 8%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+main {
+  flex: 2 1 70%;
+  float: left;
+  width: 60vw;
+  background-color: hsl(55, 100%, 52%);
+}
+
+.structural1 {
+  padding: 10px;
+  border: 2px solid black;
+  margin: 1rem;
+}
+
+.structural2 {
+  padding: 5px;
+  margin: 10px;
+  background-color: hsl(55, 100%, 52%);
+  flex: 2 1 70%;
+}
+
+#p1 {
+  color: rgb(34, 0, 255);
+}
+
+#p2 {
+  color: rgba(255, 85, 0, 0.69);
+}
+
+p::first-letter {
+  color: rgba(0, 0, 0, 0.827);
+}
+
+.structural3 {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+aside {
+  float: right;
+  width: 30vw;
+  background-color: hsl(59, 100%, 51%);
+  flex: 1 2 30%;
+}
+
+nav a {
+  border: 2px solid rgb(130, 0, 85);
+  font: italic small-caps bold 12px/30px Georgia, serif;
+  color: rgb(130, 0, 130);
+  background-color: cornsilk;
+  padding: 5px;
+}
+
+nav a:hover {
+  border: 2px solid cornsilk;
+  color: cornsilk;
+  background-color: indigo;
+}
+
+a:hover {
+  color: #09c;
+}
+
+footer {
+  clear: both;
+  background-color: hsl(0, 100%, 52%);
+  flex: 1 5%;
+}
+
+footer p {
+  font-size: 0.75em;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 20px; 
+}
+
+#gallery figure {
+  border: 2px solid black;
+  text-align: center;
+}
+
+#gallery figure img {
+  width: 100%; 
+  height: auto; 
+}
+
+#gallery figure figcaption {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+}
